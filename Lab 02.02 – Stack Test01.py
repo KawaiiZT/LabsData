@@ -46,7 +46,6 @@ class ArrayStack:
 
     def print_stack(self):
         print(self.data)
-        
 NAMES_ = [
     "Walter", "Skyler", "Jesse", "Saul",
     "Mike", "Hank", "Marie",
