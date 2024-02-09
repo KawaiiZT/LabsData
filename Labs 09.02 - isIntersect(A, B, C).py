@@ -1,15 +1,12 @@
-"""Labs 09.02 - isIntersect(A, B, C)"""
-import json as j
+"""isIntersect(A, B, C)_Verson have enough sleep"""
+import json
 def isintersect():
-    """Labs 09.02 - isIntersect(A, B, C)"""
-    aaa = j.loads(input())
-    bbb = j.loads(input())
-    ccc = j.loads(input())
-    for i in aaa:
-        if i in bbb and i in ccc:
-            print(True)
-            break
-        else:
-            print(False)
-            break
-isintersect()
+    """Is A, B, C intersect together"""
+    a_lis = json.loads(input())
+    b_lis = json.loads(input())
+    c_lis = json.loads(input())
+    for data in a_lis:
+        if data in b_lis and data in c_lis:
+            return True
+    return False
+print(isintersect())
